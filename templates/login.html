@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html ng-app="app" ng-controller="loginController">
+    <head><title>login</title></head>
+<form style="color:blue">
+        <div>
+            <label><strong>emaild</strong></label>&emsp;&emsp;&emsp;&emsp;&emsp;&nbsp;&nbsp;
+            <input type="email" ng-model="email" name="email" required><br><br><br>
+        </div>
+        <div>
+            <label><strong>password</strong></label>&emsp;&emsp;&emsp;&emsp;&nbsp;&nbsp;
+            <input type="password" ng-model="password"><br><br><br>
+        </div>
+        <div>
+            <button class="button button3" ng-click="login({'email':email,'password':password})">login</button>&emsp;&emsp;&emsp;&emsp;&emsp;&nbsp;&nbsp;
+            <button><a href="register.html" target="__blank">register</a></button>
+            
+        </div>
+    </form>
+        {{result}}
+
+        <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.6.0/angular.min.js"></script>
+            <script src="../client/controllers/logincontroller.js"></script>
+            <script src="../client/services/loginservice.js"></script>
+  
+    
+</html>

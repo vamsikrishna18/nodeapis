@@ -1,0 +1,9 @@
+{
+    "name":"node_project",
+    "dependencies":{
+        "angular":"latest",
+        "angular-ui-router":"~0.2.18",
+        "ngStorage": "latest"
+
+    }
+}

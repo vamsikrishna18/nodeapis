@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html ng-app="app" ng-controller="registerController">
+<form>
+    <div>
+         <label>username</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+         <input type="text" ng-model="username"><br><br>
+    </div>
+    <div>
+         <label>emailid</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+         <input type="email" ng-model="email"><br><br>
+    </div>
+    <div>
+        <label>password</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <input type="password" ng-model="password"><br><br>
+    </div>
+    <div>
+        <label>DOB</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <input type="date" ng-model="DOB"><br><br>
+    </div>
+    <div>
+        <label>BOI</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <input type="text" ng-model="BOI"><br><br>
+    </div>
+    <div>
+    <button ng-click="sendData({'username':username,'email':email,'password':password,'DOB':DOB,'BOI':BOI})">register</button>
+    </div>
+    </form>
+    <h1>{{result}}</h1>
+
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.6.0/angular.min.js"></script>
+    <script src="controllers/registercontroller.js"></script>
+    <script src="services/registerservice.js"></script>
+    
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html ng-app="app" ng-controller="registerController">
+    <head><link rel="stylesheet" type="text/css" href="css/style.css"></head>
+<form style="color:blue";>
+    <div>
+         <label><strong>username</strong></label>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+         <input type="text" ng-model="username" required><br><br>
+    </div>
+    <div>
+         <label><strong>emailid</strong></label>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+         <input type="email" ng-model="email"><br><br>
+    </div>
+    <div>
+        <label><strong>password</strong></label>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+        <input type="password" ng-model="password"><br><br>
+    </div>
+    <div>
+        <label><strong>DOB</strong></label>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&nbsp;&nbsp;
+        <input type="date" ng-model="DOB"><br><br>
+    </div>
+    <div>
+        <label><strong>BOI</strong></label>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+        <input type="text" ng-model="BOI"><br><br>
+    </div>
+    <div>
+    <button class="button button3" ng-click="sendData({'username':username,'email':email,'password':password,'DOB':DOB,'BOI':BOI})">register</button>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+
+    <button><a href="login.html" target="__blank">login</a></button>
+</div>
+    </form>
+    <h1>{{result}}</h1>
+
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.6.0/angular.min.js"></script>
+    <script src="../client/controllers/registercontroller.js"></script>
+    <script src="../client/services/registerservice.js"></script>
+    
+</html>

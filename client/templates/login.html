@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html ng-app="app" ng-controller="loginController">
+    <head><title>login</title></head>
+    <body>
+        <div>
+            <label>emailid</label>
+            <input type="email" ng-model="email"><br><br><br>
+        </div>
+        <div>
+            <label>password</label>
+            <input type="password" ng-model="password"><br><br><br>
+        </div>
+        <div>
+            <button type="submit" ng-click="sendData({"email":email,"password":password})">login</button>&emsp;&emsp;&emsp;&emsp;&emsp;&nbsp;&nbsp;
+            <button><a href="register.html" target="__blank">register</a></button>
+            
+        </div>
+    </body>
+</html>
